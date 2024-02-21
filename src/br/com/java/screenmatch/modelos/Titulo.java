@@ -24,6 +24,7 @@ public class Titulo {
         return duracaoEmMinutos;
     }
 
+
     public int getTotalDeAvalicoes() {
         return totalDeAvalicoes;
     }

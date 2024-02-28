@@ -5,6 +5,8 @@ import br.com.java.screenmatch.modelos.Filme;
 import br.com.java.screenmatch.modelos.Serie;
 import br.com.java.screenmatch.modelos.Titulo;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
 
@@ -48,6 +50,22 @@ public class Principal {
         episodio.setSerie(minhaSerie);
         episodio.setTotalVisualizacoes(300);
         filtroRecomendacao.filtra(episodio);
+
+        var filmeDoLuiz = new Filme();
+        filmeDoLuiz.setNome("Talk to me");
+        filmeDoLuiz.setAnoDeLancamento(2023);
+        filmeDoLuiz.setDuracaoEmMinutos(140);
+        filmeDoLuiz.avalia(9);
+        filmeDoLuiz.avalia(6);
+        filmeDoLuiz.avalia(8);
+
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(meuFilme);
+        listaDeFilmes.add(filmeDoLuiz);
+        listaDeFilmes.add(outroFilme);
+        System.out.println("Tamanho da lista de filmes: " + listaDeFilmes.size());
+        System.out.println("Primeiro filme da lista: " + listaDeFilmes.get(0).getNome());
+        System.out.println("*************************************************************");
 
     }
 }

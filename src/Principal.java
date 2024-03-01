@@ -10,10 +10,7 @@ import java.util.ArrayList;
 public class Principal {
     public static void main(String[] args) {
 
-        Filme meuFilme = new Filme();
-        
-        meuFilme.setNome("Saltburn");
-        meuFilme.setAnoDeLancamento(2022);
+        Filme meuFilme = new Filme("Saltburn", 2023);
         meuFilme.setDuracaoEmMinutos(180);
 
         meuFilme.exibeFichaTecnica();
@@ -23,18 +20,14 @@ public class Principal {
         System.out.println("Total de avaliações:" + meuFilme.getTotalDeAvalicoes());
         System.out.println(meuFilme.pegaMedia());
 
-        Serie minhaSerie = new Serie();
-        minhaSerie.setNome("The White lotus");
-        minhaSerie.setAnoDeLancamento(2021);
+        Serie minhaSerie = new Serie("The White lotus", 2021);
         minhaSerie.exibeFichaTecnica();
         minhaSerie.setTemporadas(2);
         minhaSerie.setEpisodiosPorTemporada(8);
         minhaSerie.setMinutosPorEpisodio(60);
         System.out.println("Duração da serie: " + minhaSerie.getDuracaoEmMinutos());
 
-        Filme outroFilme = new Filme();
-        outroFilme.setNome("Poor Things");
-        outroFilme.setAnoDeLancamento(2024);
+        Filme outroFilme = new Filme("Poor Things", 2024);
         outroFilme.setDuracaoEmMinutos(200);
 
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
@@ -51,9 +44,7 @@ public class Principal {
         episodio.setTotalVisualizacoes(300);
         filtroRecomendacao.filtra(episodio);
 
-        var filmeDoLuiz = new Filme();
-        filmeDoLuiz.setNome("Talk to me");
-        filmeDoLuiz.setAnoDeLancamento(2023);
+        var filmeDoLuiz = new Filme("Talk to me", 2022);
         filmeDoLuiz.setDuracaoEmMinutos(140);
         filmeDoLuiz.avalia(9);
         filmeDoLuiz.avalia(6);

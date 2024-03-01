@@ -1,3 +1,5 @@
+package br.com.java.screenmatch.principal;
+
 import br.com.java.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.java.screenmatch.calculos.FiltroRecomendacao;
 import br.com.java.screenmatch.modelos.Episodio;

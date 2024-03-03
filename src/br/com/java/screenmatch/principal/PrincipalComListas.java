@@ -6,6 +6,7 @@ import br.com.java.screenmatch.modelos.Titulo;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -15,7 +16,7 @@ public class PrincipalComListas {
         var filmeDoLuiz = new Filme("Talk to me", 2022);
         Serie minhaSerie = new Serie("The White lotus", 2021);
 
-        ArrayList<Titulo> lista = new ArrayList<>();
+        List<Titulo> lista = new ArrayList<>();
         lista.add(meuFilme);
         lista.add(filmeDoLuiz);
         lista.add(outroFilme);
